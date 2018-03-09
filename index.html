@@ -1,10 +1,162 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="/assets/css/style.scss">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="functions.js"></script>
+        <!-- Latest compiled and minified CSS (bootstrap) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Font Awesome CDN embeded code -->
+        <script src="https://use.fontawesome.com/24febf1a54.js"></script>
         <title>Portfolio</title>
-        <meta name="description" content="Showcasing my portfolio">
     </head>
+    
     <body>
-        <h1 id="title">Hello World</h1>
+        <div class="navWide">
+            <nav>
+                <div class="navLeft">
+                    <a href="#nameSection">GURTAJ KANG</a>
+                </div>
+                <div class="navRight">
+                    <a href="#portfolioSection">PORTFOLIO</a>
+                    <a href="#aboutSection">ABOUT</a>
+                    <a href="#contactSection">CONTACT</a>
+                    <a href="https://github.com/gurtaj1/CV">CURRICULUM VITAE</a>
+                    <a href="https://github.com/gurtaj1">GITHUB PROFILE</a>
+                </div>
+            </nav>
+        </div>
+        <div class="navNarrow">
+            <nav>
+                <a class="navToggle" href="#nameSection">GURTAJ KANG</a>
+                <i class="fa fa-bars navToggle"></i>
+                <div class="narrowLinks">
+                    <a class="navToggle" href="#portfolioSection">PORTFOLIO</a>
+                    <a class="navToggle" href="#aboutSection">ABOUT</a>
+                    <a class="navToggle" href="#contactSection">CONTACT</a>
+                    <a class="navToggle" href="https://github.com/gurtaj1/CV">CURRICULUM VITAE</a>
+                    <a class="navToggle" href="https://github.com/gurtaj1">GITHUB PROFILE</a>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div class="contentPane">
+                <div id="nameSection">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-10">
+                            <img src="" alt="Gurtaj Kang">
+                            <h1>GURTAJ KANG</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-10">
+                            <div class="underline" class="col-12"></div>
+                            <h4>Front End Developer</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolioSection">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-10">
+                            <h1>PORTFOLIO</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-10">
+                            <div class="underline" class="col-12"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <img class="screen" id="kovScreen" src="" alt="King Of Vape Screenshot">
+                        </div>
+                        <div class="col-md-5 col-10">
+                            <img class="screen" id="rgbyScreen" src="" alt="Simon Game Screenshot">
+                            testcontent
+                        </div>
+                        <div class="col-md-5 col-10">
+                            <img class="screen" id="osxsScreen" src="" alt="Naughts and Crosses Screenshot">
+                            testcontent
+                        </div>
+                        <div class="col-md-5 col-10">
+                            <img class="screen" id="pomodoroScreen" src="" alt="Pomodoro Clock Screenshot">
+                            testcontent
+                        </div>
+                        <div class="col-md-5 col-10">
+                            <img class="screen" id="calculatorScreen" src="" alt="Calculator Screenshot">
+                            testcontent
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutSection">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-10">
+                            <h1>ABOUT</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-10">
+                            <div class="underline" class="col-12"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-10">
+                            <p>
+                                I am a Front End Developer, with a High Distinction in Free Code Camp's Front End Development Program. 
+                                Previously I've worked for King Of Vape on their online store.
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-10">
+                            <p>
+                                I can Code using HTML, CSS, JavaScript, ReactJS, React Router, and React Redux. 
+                                With a deep thirst for knowledge, I hope to one day become a true Polyglot!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contactSection">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-10">
+                            <h1>CONTACT ME</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-10">
+                            <div class="underline" class="col-12"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-10">
+                            <form action="https://formspree.io/gurtajkang@yahoo.co.uk" method="post" enctype="text/plain">
+                                <input class="form-control mr-sm-2 searchBox" type="search" name="name" placeholder="Name"/>
+                                <input class="form-control mr-sm-2 searchBox" type="search" name="email" placeholder="Email Address" required/>
+                                <input class="form-control mr-sm-2 searchBox" type="search" name="message" placeholder="Message" required/>
+                                <button type="submit" class="btn btn-success mb-2 ml-0">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <h3>LOCATION</h3>
+                        <p>London</p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <h3>NETWORK</h3>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <h3>CREDITS</h3>
+                        <p>LONDON</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Latest compiled and minified JS, Popper.js, and jQuery (bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
