@@ -6,4 +6,9 @@ $(document).ready(function(){
             $(".narrowLinks").css({"display": "none"});
         }
     })
+    $(".navToggleOne").click(function(){
+        if ($(".narrowLinks").css("display") === "block") {
+            $(".narrowLinks").css({"display": "none"});
+        } 
+    })
 })

@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="functions.js"></script>
@@ -8,42 +10,37 @@
         <!-- Font Awesome CDN embeded code -->
         <script src="https://use.fontawesome.com/24febf1a54.js"></script>
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Righteous" rel="stylesheet">
         <title>Portfolio</title>
     </head>
     
     <body>
-        <div class="navWide">
-            <nav>
-                <div class="navLeft">
-                    <a href="#nameSection">GURTAJ KANG</a>
-                </div>
-                <div class="navRight">
-                    <a href="#portfolioSection">PORTFOLIO</a>
-                    <a href="#aboutSection">ABOUT</a>
-                    <a href="#contactSection">CONTACT</a>
-                    <a href="https://github.com/gurtaj1/CV">CURRICULUM VITAE</a>
-                    <a href="https://github.com/gurtaj1">GITHUB PROFILE</a>
-                </div>
-            </nav>
-        </div>
-        <div class="navNarrow">
-            <nav>
-                <a class="navToggle" href="#nameSection">GURTAJ KANG</a>
-                <i class="fa fa-bars navToggle"></i>
-                <div class="narrowLinks">
-                    <a class="navToggle" href="#portfolioSection">PORTFOLIO</a>
-                    <a class="navToggle" href="#aboutSection">ABOUT</a>
-                    <a class="navToggle" href="#contactSection">CONTACT</a>
-                    <a class="navToggle" href="https://github.com/gurtaj1/CV">CURRICULUM VITAE</a>
-                    <a class="navToggle" href="https://github.com/gurtaj1">GITHUB PROFILE</a>
-                </div>
-            </nav>
-        </div>
+        <nav class="navWide">
+            <div class="navWideLeft">
+                <a href="#nameSection">GURTAJ KANG</a>
+            </div>
+            <div class="navWideRight">
+                <a href="#portfolioSection">PORTFOLIO</a>
+                <a href="#aboutSection">ABOUT</a>
+                <a href="#contactSection">CONTACT</a>
+                <a href="https://github.com/gurtaj1/CV">CURRICULUM VITAE</a>
+                <a href="https://github.com/gurtaj1">GITHUB PROFILE</a>
+            </div>
+        </nav>
+        <nav class="navNarrow">
+            <a class="navToggleOne" id="narrowName" href="#nameSection">GURTAJ KANG</a>
+            <i class="fa fa-bars fa-2x navToggle"></i>
+            <div class="narrowLinks">
+                <a class="navToggle" href="#portfolioSection">PORTFOLIO</a>
+                <a class="navToggle" href="#aboutSection">ABOUT</a>
+                <a class="navToggle" href="#contactSection">CONTACT</a>
+                <a class="navToggle" href="https://github.com/gurtaj1/CV">CURRICULUM VITAE</a>
+                <a class="navToggle" href="https://github.com/gurtaj1">GITHUB PROFILE</a>
+            </div>
+        </nav>
         <div class="container-fluid">
             <div class="contentPane">
-                <div id="nameSection">
+                <div id="nameSection"  class="section">
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-10">
                             <img src="" alt="Gurtaj Kang">
@@ -57,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="portfolioSection">
+                <div id="portfolioSection" class="section">
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-10">
                             <h1>PORTFOLIO</h1>
@@ -90,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="aboutSection">
+                <div id="aboutSection" class="section">
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-10">
                             <h1>ABOUT</h1>
@@ -116,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="contactSection">
+                <div id="contactSection" class="section">
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-10">
                             <h1>CONTACT ME</h1>
@@ -141,7 +138,7 @@
             </div>
         </div>
         <footer>
-            <div class="container">
+            <div class="container footerText">
                 <div class="row">
                     <div class="col-md-4 col-12">
                         <h3>LOCATION</h3>
@@ -152,7 +149,7 @@
                     </div>
                     <div class="col-md-4 col-12">
                         <h3>CREDITS</h3>
-                        <p>LONDON</p>
+                        <p></p>
                     </div>
                 </div>
             </div>

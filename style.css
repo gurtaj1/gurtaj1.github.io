@@ -1,5 +1,5 @@
 * {
-    font-family: 'Baloo', cursive;
+    font-family: 'Righteous', Arial;
 }
 
 nav {
@@ -7,65 +7,79 @@ nav {
     top: 0px;
     z-index: 1;
     display: block;
+    max-height: 100%;
     width: 100%;
-    background-color: #A65900;
-    padding: 20px;
+    background-color: #660066;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.68);
-    color: white;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
-    padding: 0 0.5em;
+    color: #F6E600;
+    padding: 0 0.8rem;
     cursor: pointer;
 }
 
 nav a:hover {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navWide {
+    padding: 20px;
     display: none;
-    
 }
 
-.navLeft {
-    font-size: 25px;
+.navWideLeft {
+    font-size: 18px;
     display: inline;
-    margin-left: 5rem;
+    margin-left: 4rem;
 }
 
-.navRight {
-    font-size: 15px;
+.navWideRight {
+    font-size: 10px;
     position: relative;
     float: right;
     display: block;
     margin-right: 5rem;
-    margin-top: 4px;
+    margin-top: 8px;
+}
+
+.navNarrow {
+    padding: 13px 5px 13px 5px;
 }
 
 .navNarrow i {
+    margin-top: 4px;
 	float: right;
-	cursor: pointer;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #F6E600;
+    font-size: 22px;
 }
 
-.navNarrow i:hover {
-    color: black;
+.navNarrow i:active {
+    color: white;
 }
 
 .narrowLinks {
-	display: none;
+    display: none;
 }
 
 .narrowLinks a {
+    font-size: 17px;
 	display: block;
 	float: left;
-	clear: left;
+    clear: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-@media only screen and (min-width: 900px) {
+#narrowName {
+    font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) {
 	    .navWide {
 		display: block;
 		}
@@ -74,12 +88,21 @@ nav a:hover {
         }
 }
 
-@media only screen and (min-width: 1135px) {
-        .navLeft {
-            font-size: 30px;
+@media only screen and (min-width: 890px) {
+        .navWideLeft {
+            font-size: 23px;
         }
-        .navRight {
-            font-size: 20px;
+        .navWideRight {
+            font-size: 13px;
+        }
+}
+
+@media only screen and (min-width: 1100px) {
+        .navWideLeft {
+            font-size: 27px;
+        }
+        .navWideRight {
+            font-size: 17px;
         }
 }
 
@@ -87,39 +110,51 @@ nav a:hover {
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.68);
 }
 
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 #nameSection {
     width: 100%;
     text-align: center;
-    background-color: #99004C;
+    background-color: #F6E600;
 }
 
 #nameSection img {
-    margin-top: 90px;
     max-height: 200px;
     width: 100%;
+}
+
+#nameSection h1 {
+    color: black;
 }
 
 .underline {
     display: block;
     clear: both;
     height: 8px;
-    background-color: white;
+    background-color: black;
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
 #nameSection h4 {
-    margin-bottom: 40px;
+    color: black;
 }
+
 #portfolioSection {
     text-align: center;
-    background-color: #00FF00;
+    background-color: black;
 }
+
 #portfolioSection h1 {
-    margin-top: 40px;
+    color: #F6E600;
 }
+
 #portfolioSection .underline {
+    background-color: #F6E600;
     margin-bottom: 30px;
 }
 
@@ -132,33 +167,36 @@ nav a:hover {
 
 #aboutSection {
     text-align: center;
-    background-color: #99004C;
+    background-color: #F6E600;
 }
 
 #aboutSection h1 {
-    margin-top: 40px;
+    color: black;
 }
 
 #aboutSection .underline {
     margin-bottom: 40px;
+    background-color: black;
 }
 
 #aboutSection p {
     text-align: left;
     margin-bottom: 40px;
+    color: black;
 }
 
 #contactSection {
     text-align: center;
-    background-color: #00FF00;
+    background-color: black;
 }
 
 #contactSection h1 {
-    margin-top: 40px;
+    color: #F6E600;
 }
 
 #contactSection .underline {
     margin-bottom: 40px;
+    background-color: #F6E600;
 }
 
 #contactSection form {
@@ -175,7 +213,8 @@ nav a:hover {
 }
 
 footer {
-    background-color: #A65900;
+    background-color: #660066;
+    color: #F6E600;
     padding: 30px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.68);
     text-align: center;
