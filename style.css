@@ -206,23 +206,18 @@ nav a:hover {
 
 .searchBox {
     margin-bottom: 10px;
-    background-color: #F6E600;
-    border: 1px solid white;
 }
 
 .searchBox:focus {
-    background-color: #F6E600;
     color: black;
 }
 
 .form-control::-moz-placeholder {
-    color: #660066;
-    opacity: 0.5;
+
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #660066;
-    opacity: 0.5;
+
 }
 
 #contactSection button {
