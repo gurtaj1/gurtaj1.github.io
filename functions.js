@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(".navToggle").click(function(){
         if ($(".narrowLinks").css("display") === "none") {
-            $(".narrowLinks").css({"display": "block"});
+            $(".narrowLinks").slideDown();
         } else {
-            $(".narrowLinks").css({"display": "none"});
+            $(".narrowLinks").slideUp();
         }
     })
     $(".navToggleOne").click(function(){
