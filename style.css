@@ -392,15 +392,15 @@ footer i {
 
 #kovScreenPage {
     background-color: #3CA500;
-    color: black;
+    color: white;
 }
 
 #kovScreenPage .underline {
-    background-color: black;
+    background-color: white;
 }
 
 #kovScreenPage i:hover {
-    color: white;
+    color: black;
 }
 
 #rgbyScreenPage {
@@ -431,15 +431,15 @@ footer i {
 
 #osandxsScreenPage {
     background-color: #02AB08;
-    color: black;
+    color: white;
 }
 
 #osandxsScreenPage .underline {
-    background-color: black;
+    background-color: white;
 }
 
 #osandxsScreenPage i:hover {
-    color: white;
+    color: black;
 }
 
 #calculatorScreenPage {
