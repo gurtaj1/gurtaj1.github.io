@@ -327,6 +327,7 @@ footer i {
 }
 
 .linkView .container-fluid {
+    overflow: hidden;
     padding-top: 100px;
     padding-bottom: 100px;
 }
