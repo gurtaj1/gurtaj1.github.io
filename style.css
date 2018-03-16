@@ -28,14 +28,9 @@ nav a {
     border-radius: 30px;
 }
 
-nav a:hover {
+.navWide a:hover {
     text-decoration: none;
     color: #FFCC00;
-}
-
-nav a:active {                /*bacause without this when viewing on phone screen, a link that had been clicked would remain yellow until a different link had been clicked*/
-    text-decoration: none;
-    color: white;
 }
 
 .navWide {
@@ -62,6 +57,11 @@ nav a:active {                /*bacause without this when viewing on phone scree
     padding: 13px 5px 13px 5px;
 }
 
+.navNarrow a:hover {
+    text-decoration: none;
+    color: white;        /*hover colour remains on when on touch screen so if this was yellow the link would change to yellow until it is clicked again*/
+}
+
 .navNarrow i {
     margin-top: 4px;
 	float: right;
@@ -72,7 +72,7 @@ nav a:active {                /*bacause without this when viewing on phone scree
 }
 
 .navNarrow i:hover {
-    color: #FFCC00;
+    color: white;
 }
 
 .navNarrow i:active {
