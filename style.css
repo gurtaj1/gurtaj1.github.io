@@ -13,7 +13,7 @@
 nav {
     position: fixed;
     top: 0px;
-    z-index: 1;
+    z-index: 5;
     display: block;
     width: 100%;
     background-color: #660066;
@@ -140,12 +140,17 @@ nav a {
     background-color: #FFCC00;
 }
 
-#nameSection img {
-    max-width: 200px;
+.imageAndShadow {
+    margin: 30px auto 30px auto;
+    width: 200px;
+    height: 200px;
     border: 5px solid black;
     border-radius: 100%;
-    margin-bottom: 30px;
+    background-image: url("profile13.jpg");
+    background-size: cover;
+    box-shadow: inset 0px 0px 20px 1.5px rgba(0, 0, 0, 0.68);
 }
+
 
 #nameSection h1 {
     color: black;
