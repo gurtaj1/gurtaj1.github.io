@@ -146,7 +146,7 @@ nav a {
   width: 200px;
   height: 200px;
   border: 5px solid black;
-  border-radius: 100%;
+  border-radius: 10%;
   background-image: url("profile.jpg");
   background-size: cover;
   box-shadow: inset 0px 0px 20px 1.5px rgba(0, 0, 0, 0.68);
