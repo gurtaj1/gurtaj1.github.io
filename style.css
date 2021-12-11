@@ -192,6 +192,12 @@ nav a {
   cursor: pointer;
 }
 
+.small-portfolio-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 #aboutSection {
   text-align: center;
   background-color: #ffcc00;
